@@ -1,6 +1,6 @@
 package com.klipvr.backend.payload.response;
 
-import jdk.nashorn.internal.objects.annotations.Getter;
+//import jdk.nashorn.internal.objects.annotations.Getter;
 public class TokenRefreshResponse {
     private String accessToken;
     private String refreshToken;

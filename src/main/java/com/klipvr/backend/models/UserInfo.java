@@ -17,13 +17,14 @@ public class UserInfo
     }
     private Long level;
     private Long task_done;
+
     public String getUsername() {
         return username;
     }
     public void setUsername(String username) {
         this.username = username;
     }
-    public UserInfo(Long level, Long task_done, String username, Long id, Long coins, Long avatar)
+    public UserInfo(Long level, Long task_done, String username, Long id, Long coins, Long avatar ,Long badge)
     {
         this.level = level;
         this.task_done = task_done;
@@ -31,9 +32,20 @@ public class UserInfo
         this.id = id;
         this.coins = coins;
         this.avatar = avatar;
+        this.badge=badge;
     }
     @NotBlank
     private String username;
+
+    public Long getBadge() {
+        return badge;
+    }
+
+    public void setBadge(Long badge) {
+        this.badge = badge;
+    }
+
+    private Long badge;
     public Long getId() {
         return id;
     }
